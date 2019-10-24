@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">project-1-clickn</string>
+    <string name="title_home">Map</string>
+    <string name="title_dashboard">Events</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_description">Event Description</string>
+    <string name="mapbox_access_token">sk.eyJ1IjoiY2xpY2tuIiwiYSI6ImNrMjNtbzM3YzB3eTQzZ3BnM3FxNTRhd3AifQ.Nma0sBlhoOdOKF-jmQjDFw</string>\
+    <string name="join_event">Join Event</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_id">5d474716c6cafee40f94a3e7</string>
+
+</resources>
