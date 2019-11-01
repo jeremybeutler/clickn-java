@@ -38,8 +38,7 @@ public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
     private String user_oid = "5d474716c6cafee40f94a3e7";
-    private String server_ip = "10.104.1.122";
-    private String jsonURL = "http://" + server_ip + ":3000/users/" + user_oid + "/activeEvents";
+    private String jsonURL = "http://167.71.114.60/api/users/" + user_oid + "/activeEvents";
     private final int jsoncode = 1;
     private ListView listView;
     private static ProgressDialog mProgressDialog;

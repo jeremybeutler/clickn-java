@@ -74,8 +74,7 @@ public class HomeFragment extends Fragment {
     private JSONObject eventsJsonObject;
     private JsonObject currentlySelectedEventJsonObject = null;
     private final int jsoncode = 1;
-    private String server_ip = "10.104.1.122";
-    private String jsonURL = "http://" + server_ip + ":3000/events/";
+    private String jsonURL = "http://167.71.114.60/api/events";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -101,13 +100,6 @@ public class HomeFragment extends Fragment {
                 });
             }
         });
-//        final TextView textView = root.findViewById(R.id.text_home);
-//        homeViewModel.getText().observe(this, new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//                textView.setText(s);
-//            }
-//        });
         return root;
     }
 
@@ -202,38 +194,6 @@ public class HomeFragment extends Fragment {
         }
     }
 
-//    public ArrayList<JsonElement> getInfo(String response) {
-//        ArrayList<JsonElement> jsonElementArrayList = new ArrayList<>();
-//        Gson gson = new Gson();
-//        JsonElement element = gson.fromJson(response, JsonElement.class);
-//        try {
-//            JSONObject jsonObject = new JSONObject(response);
-//            if (jsonObject.getString("status").equals("true")) {
-//
-//                JSONArray dataArray = jsonObject.getJSONArray("data");
-//
-//                for (int i = 0; i < dataArray.length(); i++) {
-//
-//                    EventModel eventModel = new EventModel();
-//                    JSONObject dataobj = dataArray.getJSONObject(i);
-//                    JSONArray coordinatesarray = dataobj.getJSONObject("location").getJSONArray("coordinates");
-//                    eventModel.setEventTitle(dataobj.getString("title"));
-//                    eventModel.setEventDescription(dataobj.getString("description"));
-//                    eventModel.setEventLongitude(coordinatesarray.getDouble(0));
-//                    eventModel.setEventLatitude(coordinatesarray.getDouble(1));
-//                    eventModelArrayList.add(eventModel);
-//
-//                }
-//            }
-//
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
-//        return eventModelArrayList;
-//    }
-
-
-
     public boolean isSuccess(String response) {
 
         try {
@@ -289,15 +249,5 @@ public class HomeFragment extends Fragment {
             e.printStackTrace();
         }
     }
-
-
-
-//    private final LocationListener mLocationListener = new LocationListener() {
-//        @Override
-//        public void onLocationChanged(final Location location) {
-//            currentLocationLongitude = location.getLongitude();
-//            currentlocationLatitude = location.getLatitude();
-//        }
-//    };
 
 }

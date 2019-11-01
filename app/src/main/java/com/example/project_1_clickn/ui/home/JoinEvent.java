@@ -21,8 +21,7 @@ import java.net.URL;
 public class JoinEvent extends DialogFragment {
     private JsonObject eventJsonObject = null;
     private String user_oid = "5d474716c6cafee40f94a3e7";
-    private String server_ip = "10.104.1.122";
-    private String partialJsonURL = "http://" + server_ip + ":3000/users/" + user_oid + "/joinEvent/";
+    private String partialJsonURL = "http://167.71.114.60/api/users/" + user_oid + "/joinEvent/";
     private String fullJsonURL = "";
 
     // Create a class constructor for the MyClass class
